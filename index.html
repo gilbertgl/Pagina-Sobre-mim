@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9757c6bb21.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Gilberto M</title>
+</head>
+<body>
+    <header>
+        <div>
+            <p>Gilberto M</p>
+            <p id="sNome">Silva</p>
+        </div>
+       <div>
+        <ul>
+            <li id="first">
+                <a href="https://github.com/gilbertgl" target="_blank" rel="external">GitHub</a>
+            </li>
+            <li id="second">
+                <a href="mailto:test@test.com" target="_black" rel="external">Email</a>
+            </li>
+            <li>
+                <a href="https://wa.me/11988776655" target="_blank" rel="external">Whatsapp</a>
+            </li>
+        </ul>
+       </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Gilberto M</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>Olá, seja muito bem vindo a página que eu fiz!! <br>
+                    Eu sou estudante de HTML5, CSS3 e JavaScript. Comecei a pouco tempo mas estou aprendendo rápido e essa é o meu primeiro porjeto! </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+        <p></p>
+    </main>
+    <footer>
+        <div>
+            <p>&copy; Todos os direito reservados 2022</p>
+            <p>Desenvolvido por Gilberto M Silva</p>
+        </div>
+    </footer>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation')
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about')
+            display.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
